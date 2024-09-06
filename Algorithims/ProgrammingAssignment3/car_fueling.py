@@ -2,31 +2,30 @@ from sys import stdin
 
 
 def min_refills(distance, tank, stops):
+    # Add the destination as a final "stop"
     stops.append(distance)
+    
     num_refills = 0
-    current_pos =0
-    last_refill_pos = 0
-
-    for i in range(len(stops)):
-        print("HIHIHI")
-        print("STOP AT :",i, " " ,  stops[i])
-        print("TANK SIZE", tank)
-        print("Current pos: ", current_pos)
-        print("DIFFERENCE", stops[i]-current_pos)
-        # Check if it's possible to reach the next stop or destination
-        if stops[i] - current_pos >= tank:
-            print("REFILL PLEASE")
-            # If we can't reach the next stop after the last refill, refill at the last stop
-            if current_pos == last_refill_pos:
-                # If the car is at the same place where it last refilled and can't reach the next stop, it's impossible
-                return -1  # Impossible to reach the destination
-            # Refill at the last stop
-            num_refills += 1
-            last_refill_pos = current_pos
+    current_position = 0
+    current_refill = 0
+    
+    while current_position < distance:
+        # Find the farthest reachable stop
+        last_refill = current_position
         
-        # Move the car to the next stop
-        current_pos = stops[i]
-    # write your code here
+        # Move to the farthest stop within the car's fuel range
+        while current_refill < len(stops) and stops[current_refill] - last_refill <= tank:
+            current_position = stops[current_refill]
+            current_refill += 1
+            
+        # If no station is reachable from the last refill point, return impossible
+        if current_position == last_refill:
+            return -1  # Impossible to reach the destination
+            
+        # If we haven't reached the destination, increment the number of refills
+        if current_position < d:
+            num_refills += 1
+    
     return num_refills
 
 
