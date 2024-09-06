@@ -2,7 +2,6 @@ from sys import stdin
 
 
 def optimal_value(capacity, weights, values):
-    print("HIHIHIO")
     items = [(values[i], weights[i], values[i] / weights[i]) for i in range(len(values))]
     
     # Sort items by value-to-weight ratio in descending order
