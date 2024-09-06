@@ -13,7 +13,8 @@ def min_refills(distance, tank, stops):
         print("TANK SIZE", tank)
         print("Current pos: ", current_pos)
         # Check if it's possible to reach the next stop or destination
-        if stops[i] - current_pos > tank:
+        if stops[i] - current_pos >= tank:
+            print("REFILL PLEASE")
             # If we can't reach the next stop after the last refill, refill at the last stop
             if current_pos == last_refill_pos:
                 # If the car is at the same place where it last refilled and can't reach the next stop, it's impossible
