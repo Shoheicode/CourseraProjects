@@ -12,6 +12,7 @@ def min_refills(distance, tank, stops):
         print("STOP AT :",i, " " ,  stops[i])
         print("TANK SIZE", tank)
         print("Current pos: ", current_pos)
+        print("DIFFERENCE", stops[i]-current_pos)
         # Check if it's possible to reach the next stop or destination
         if stops[i] - current_pos >= tank:
             print("REFILL PLEASE")
@@ -30,5 +31,11 @@ def min_refills(distance, tank, stops):
 
 
 if __name__ == '__main__':
-    d, m, _, *stops = map(int, stdin.read().split())
+    #d, m, _, *stops = map(int, stdin.read().split())
+    d = int(input())
+    m = int(input())
+    _ = int(input())
+    stops = []
+    for i in range(_):
+        stops.append(int(input()))
     print(min_refills(d, m, stops))
