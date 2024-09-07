@@ -8,6 +8,21 @@ def evaluate(a, b, op):
     else:
         assert False
 
+def min_and_max(i, j, operators, min_val, max_val):
+    min_value = float('inf')
+    max_value = float('-inf')
+
+    for k in range(i, j):
+        op = operators[k]
+        a = evaluate(max_val[i][k], max_val[k + 1][j], op)
+        b = evaluate(max_val[i][k], min_val[k + 1][j], op)
+        c = evaluate(min_val[i][k], max_val[k + 1][j], op)
+        d = evaluate(min_val[i][k], min_val[k + 1][j], op)
+
+        min_value = min(min_value, a, b, c, d)
+        max_value = max(max_value, a, b, c, d)
+
+    return min_value, max_value
 
 def maximum_value(dataset):
     digits = []
