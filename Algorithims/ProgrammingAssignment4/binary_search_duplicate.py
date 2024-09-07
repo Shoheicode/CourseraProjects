@@ -4,6 +4,8 @@ def binary_search(keys, query):
     while low <= high:
         mid = (low + high) // 2
         if keys[mid] == query:
+            while keys[mid-1] != query:
+                mid -= 1
             return mid
         elif keys[mid] < query:
             low = mid + 1
