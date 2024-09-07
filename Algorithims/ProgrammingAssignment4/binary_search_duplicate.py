@@ -5,9 +5,7 @@
 
 # Input/Output Handling:
 # The input consists of reading the size n of the sorted array arr, the array itself, and the query integer q.
-# The result, which is the index of the first occurrence of q, is printed. If 
-# 𝑞
-# q does not appear in the array, -1 is printed.
+# The result, which is the index of the first occurrence of q, is printed. If q does not appear in the array, -1 is printed.
 
 def binary_search(keys, query):
     # write your code here
