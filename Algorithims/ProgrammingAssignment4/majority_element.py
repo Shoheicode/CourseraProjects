@@ -1,3 +1,17 @@
+# Explanation:
+# Candidate Selection (Boyer-Moore Voting Algorithm):
+
+# Traverse through the array while maintaining a candidate and a counter.
+# If the counter is zero, set the current element as the candidate.
+# If the element matches the candidate, increment the counter. Otherwise, decrement the counter.
+# Verification:
+# - After the first pass, check if the candidate actually occurs more than 𝑛/2 times by counting its occurrences.
+# 
+# Input/Output Handling:
+# - Input consists of reading the size 𝑛 of the sequence and the sequence itself.
+# - The result is 1 if there is a majority element, otherwise 0.
+
+
 def majority_element_naive(elements):
     candidate = None
     count = 0
