@@ -53,7 +53,7 @@
 
 def edit_distance(first_string, second_string):
     # Initialize a DP table
-    n, m = len(A), len(B)
+    n, m = len(first_string), len(second_string)
     dp = [[0] * (m + 1) for _ in range(n + 1)]
 
     # Base case: edit distance of empty strings
