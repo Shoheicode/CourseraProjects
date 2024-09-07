@@ -4,12 +4,8 @@
 # q found and continues searching to the left until it is sure that no smaller index contains q.
 
 # Input/Output Handling:
-# The input consists of reading the size n of the sorted array arr, the array itself, and the query integer 
-# 𝑞
-# q.
-# The result, which is the index of the first occurrence of 
-# 𝑞
-# q, is printed. If 
+# The input consists of reading the size n of the sorted array arr, the array itself, and the query integer q.
+# The result, which is the index of the first occurrence of q, is printed. If 
 # 𝑞
 # q does not appear in the array, -1 is printed.
 
