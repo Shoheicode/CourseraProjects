@@ -4,11 +4,7 @@
 # q found and continues searching to the left until it is sure that no smaller index contains q.
 
 # Input/Output Handling:
-# The input consists of reading the size n of the sorted array 
-# 𝑎
-# 𝑟
-# 𝑟
-# arr, the array itself, and the query integer 
+# The input consists of reading the size n of the sorted array arr, the array itself, and the query integer 
 # 𝑞
 # q.
 # The result, which is the index of the first occurrence of 
