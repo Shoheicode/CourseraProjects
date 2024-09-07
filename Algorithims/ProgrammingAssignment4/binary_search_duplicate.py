@@ -1,3 +1,22 @@
+# Explanation:
+# binary_search_first_occurrence(arr, q):
+# The function implements a modified binary search. It keeps track of the first occurrence of 
+# q found and continues searching to the left until it is sure that no smaller index contains q.
+
+# Input/Output Handling:
+# The input consists of reading the size n of the sorted array 
+# 𝑎
+# 𝑟
+# 𝑟
+# arr, the array itself, and the query integer 
+# 𝑞
+# q.
+# The result, which is the index of the first occurrence of 
+# 𝑞
+# q, is printed. If 
+# 𝑞
+# q does not appear in the array, -1 is printed.
+
 def binary_search(keys, query):
     # write your code here
     low, high = 0, len(keys) - 1
