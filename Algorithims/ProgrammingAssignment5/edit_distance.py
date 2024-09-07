@@ -65,7 +65,7 @@ def edit_distance(first_string, second_string):
     # Fill the table using the recurrence relation
     for i in range(1, n + 1):
         for j in range(1, m + 1):
-            if A[i - 1] == B[j - 1]:
+            if first_string[i - 1] == second_string[j - 1]:
                 dp[i][j] = dp[i - 1][j - 1]  # No change needed
             else:
                 dp[i][j] = min(
