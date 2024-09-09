@@ -11,7 +11,7 @@ def are_matching(left, right):
 
 def find_mismatch(text):
     opening_brackets_stack = []
-    index = i
+    index = 0
     for i, next in enumerate(text):
         index +=1
         if next in "([{":
