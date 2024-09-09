@@ -11,7 +11,9 @@ def are_matching(left, right):
 
 def find_mismatch(text):
     opening_brackets_stack = []
+    index = 0
     for i, next in enumerate(text):
+        index +=1
         if next in "([{":
             # Process opening bracket, write your code here
             opening_brackets_stack.append(next)
@@ -25,9 +27,11 @@ def find_mismatch(text):
             elif opening_brackets_stack.pop() == '(' and next == ")":
                 break
             else:
+                print(index)
                 return False
     
     if opening_brackets_stack.count != 0:
+        print(index)
         return False
     return True
 
@@ -35,7 +39,9 @@ def find_mismatch(text):
 def main():
     text = input()
     mismatch = find_mismatch(text)
-    print(mismatch)
+    if mismatch:
+        print("Success")
+    
     # Printing answer, write your code here
 
 
