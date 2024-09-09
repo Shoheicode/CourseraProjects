@@ -19,12 +19,16 @@ def find_mismatch(text):
             opening_brackets_stack.append(next)
 
         if next in ")]}":
+            val = opening_brackets_stack.pop()
+            if opening_brackets_stack.count != 0:
+                print(index)
+                return False
             # Process closing bracket, write your code here
-            if opening_brackets_stack.pop() == '(' and next == ")":
+            if val == '(' and next == ")":
                 break
-            elif opening_brackets_stack.pop() == '(' and next == ")":
+            elif val == '(' and next == ")":
                 break
-            elif opening_brackets_stack.pop() == '(' and next == ")":
+            elif val == '(' and next == ")":
                 break
             else:
                 print(index)
