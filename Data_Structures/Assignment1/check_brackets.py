@@ -28,12 +28,10 @@ def find_mismatch(text):
             elif val == '{' and next == "}":
                 continue
             else:
-                #print("HIhi")
                 print(index)
                 return False
     
     if len(opening_brackets_stack) != 0:
-        #print("HELLO")
         print(index)
         return False
     return True
