@@ -22,7 +22,7 @@ def find_mismatch(text):
             if len(opening_brackets_stack) == 0:
                 print(index)
                 return False
-            val = opening_brackets_stack.pop()
+            val, pos = opening_brackets_stack.pop()
             # Process closing bracket, write your code here
             if val == '(' and next == ")":
                 continue
