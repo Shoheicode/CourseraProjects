@@ -18,9 +18,14 @@ def find_mismatch(text):
 
         if next in ")]}":
             # Process closing bracket, write your code here
-            print(opening_brackets_stack.pop())
+            if opening_brackets_stack.pop() == '(' and next != ")":
+                return False
+            elif opening_brackets_stack.pop() == '(' and next != ")":
+                return False
+            elif opening_brackets_stack.pop() == '(' and next != ")":
+                return False
     
-    return False
+    return True
 
 
 def main():
