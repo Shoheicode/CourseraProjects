@@ -3,6 +3,9 @@
 import sys
 
 def reach(adj, x, y):
+    lis = []
+    print(x)
+    print(y)
     print(adj)
     #write your code here
     return 0
