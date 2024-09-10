@@ -3,12 +3,19 @@
 import sys
 
 def reach(adj, x, y):
-    lis = []
-    print(x)
-    print(y)
-    print(adj)
+    visited = []
+    def explore(vertex):
+        visited.append(vertex)
+        for i in adj[vertex]:
+            if i not in visited:
+                explore(i)
+
+    explore(x)
+    if y not in visited:
+        return 0
+        
     #write your code here
-    return 0
+    return 1
 
 if __name__ == '__main__':
     input = sys.stdin.read()
