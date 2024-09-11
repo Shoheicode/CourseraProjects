@@ -8,9 +8,9 @@ def acyclic(adj):
     count= 0
     visited = [0] * len(adj)
     def explore(vertex):
-        if visited[vertex] == 1:
+        if visited[vertex] == 1: #means there is a cycle
             return True
-        if visited[vertex] == 2:
+        if visited[vertex] == 2: #Means that there is no cycle
             return False
         
         visited[vertex] == 1
