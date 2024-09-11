@@ -13,6 +13,8 @@ Input format. The first line contains an integer n. The next line contains n non
 Output format. The maximum pairwise product.
 Constraints. 2 ≤ n ≤ 2 · 105; 0 ≤ a1 ,...,an ≤ 2 · 105
 
-`
-
-`
+```python
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
