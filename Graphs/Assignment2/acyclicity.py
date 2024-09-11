@@ -4,8 +4,20 @@ import sys
 
 
 def acyclic(adj):
-    print(adj)
-    return 0
+    #print(adj)
+    count= 0
+    visited = []
+    def explore(vertex):
+        visited.append(vertex)
+        for i in adj[vertex]:
+            if i in visited:
+                return 1
+        
+        return 0
+    
+    count = explore(0)
+
+    return count
 
 if __name__ == '__main__':
     input = sys.stdin.read()
