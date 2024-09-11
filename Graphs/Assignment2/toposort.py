@@ -10,8 +10,9 @@ def dfs(adj, used, order, x):
 def toposort(adj):
     used = [0] * len(adj)
     order = []
+    
     #write your code here
-    return order
+    return order[::-1]
 
 if __name__ == '__main__':
     input = sys.stdin.read()
