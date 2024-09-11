@@ -6,7 +6,7 @@ import sys
 def acyclic(adj):
     #print(adj)
     count= 0
-    visited = []
+    visited = [0] * len(adj)
     def explore(vertex):
         visited.append(vertex)
         for i in adj[vertex]:
