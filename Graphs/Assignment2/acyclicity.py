@@ -13,7 +13,7 @@ def acyclic(adj):
         if visited[vertex] == 2: #Means that there is no cycle
             return False
         
-        visited[vertex] == 1
+        visited[vertex] = 1
         for i in adj[vertex]:
             if explore(i):
                 return True
@@ -22,8 +22,10 @@ def acyclic(adj):
         return False
     
     count = explore(0)
-
-    return count
+    
+    if count:
+        return 1
+    return 0
 
 if __name__ == '__main__':
     input = sys.stdin.read()
