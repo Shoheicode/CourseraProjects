@@ -16,7 +16,7 @@ def acyclic(adj):
             if explore(i):
                 return True
         
-        visited[vertex] == 2
+        visited[vertex] = 2
         return False
     
     for i in range(len(adj)):
