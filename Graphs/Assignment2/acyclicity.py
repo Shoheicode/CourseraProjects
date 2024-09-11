@@ -4,7 +4,6 @@ import sys
 
 
 def acyclic(adj):
-    #print(adj)
     visited = [0] * len(adj)
     def explore(vertex):
         if visited[vertex] == 1: #means there is a cycle
