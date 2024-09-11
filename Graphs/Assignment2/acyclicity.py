@@ -8,12 +8,18 @@ def acyclic(adj):
     count= 0
     visited = [0] * len(adj)
     def explore(vertex):
-        visited.append(vertex)
-        for i in adj[vertex]:
-            if i in visited:
-                return 1
+        if visited[vertex] == 1:
+            return True
+        if visited[vertex] == 2:
+            return False
         
-        return 0
+        visited[vertex] == 1
+        for i in adj[vertex]:
+            if explore(i):
+                return True
+        
+        visited[vertex] == 2
+        return False
     
     count = explore(0)
 
