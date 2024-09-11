@@ -5,7 +5,6 @@ import sys
 
 def acyclic(adj):
     #print(adj)
-    count= 0
     visited = [0] * len(adj)
     def explore(vertex):
         if visited[vertex] == 1: #means there is a cycle
@@ -21,10 +20,10 @@ def acyclic(adj):
         visited[vertex] == 2
         return False
     
-    count = explore(0)
-    
-    if count:
-        return 1
+    for i in range(len(adj)):
+        if visited[i] == 0:  # Not visited
+            if explore(i):
+                return 1  # Cycle found
     return 0
 
 if __name__ == '__main__':
