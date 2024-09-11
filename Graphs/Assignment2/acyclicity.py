@@ -4,6 +4,7 @@ import sys
 
 
 def acyclic(adj):
+    print(adj)
     return 0
 
 if __name__ == '__main__':
