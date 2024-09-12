@@ -14,7 +14,7 @@ These programs based on efficient algorithms can solve the same problem billions
 
 ## Fibonacci Sequence
 ### Fibonacci Sequence Problem
-Find the maximum product of two distinct numbers in a sequence of non-negative integers.
+Compute the n-th Fibonacci number.
 #### Input: 
 An integer n and a sequence of n non-negative integers.
 #### Output: 
