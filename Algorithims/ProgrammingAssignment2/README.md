@@ -95,8 +95,7 @@ These are the first test cases, where if n = 0 or 1, it will return the respecti
     lis[1] = 1
 ```
 Using the list above, we will be storing the values for the algorithim inside a list. It can solve the problem and the other method is the recursive method but I went with this one. 
-```
-
+```python
     for i in range(2, n+1):
         lis[i] = lis[i-1]+lis[i-2]
 
