@@ -4,8 +4,23 @@ import sys
 import queue
 
 def distance(adj, s, t):
+    dis = [0] * len(adj)
+    for i in range(len(adj)):
+        dis[i] = float('inf')
+    dis[s] = 0
+    qu = queue.Queue()
+    qu.put(s)
+
+    while not qu.empty():
+        val = qu.get()
+        for i in adj[val]:
+            if dis[i] == float('inf'):
+                qu.put(i)
+                dis[i] = dis[val]+1
+    
+    print(dis[t])
     #write your code here
-    return -1
+    return dis[t]
 
 if __name__ == '__main__':
     input = sys.stdin.read()
