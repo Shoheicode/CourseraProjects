@@ -54,7 +54,7 @@ Output:
 
 ## Huge Fibonacci Number
 ### Huge Fibonacci Number Problem
-Find the maximum product of two distinct numbers in a sequence of non-negative integers.
+Compute the n-th Fibonacci number modulo m.
 #### Input: 
 An integer n and a sequence of n non-negative integers.
 #### Output: 
