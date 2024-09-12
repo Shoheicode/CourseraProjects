@@ -79,6 +79,28 @@ if __name__ == '__main__':
     print(fibonacci_number(input_n))
 ```
 
+#### Function fibonacci_number(n)
+The input of this function is n where n is an integer.
+The output of this function is the fibonacci number that is related to that nth integer
+```python
+lis = []
+
+def fibonacci_number(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+
+    lis = [0] * (n+1)
+    lis[0] = 0
+    lis[1] = 1
+
+    for i in range(2, n+1):
+        lis[i] = lis[i-1]+lis[i-2]
+
+    return lis[n]
+```
+
 ## Huge Fibonacci Number
 ### Huge Fibonacci Number Problem
 Compute the n-th Fibonacci number modulo m.
