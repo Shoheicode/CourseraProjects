@@ -1,4 +1,5 @@
 # Paths in Graphs 1
+## Table of Content
 
 ## Problem Introduction
 You would like to compute the minimum number of flight segments to get from one city to another one. For
