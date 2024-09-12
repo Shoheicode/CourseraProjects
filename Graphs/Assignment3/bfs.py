@@ -19,6 +19,9 @@ def distance(adj, s, t):
                 dis[i] = dis[val]+1
 
     #write your code here
+    if float('inf') == dis[t]:
+        return -1
+
     return dis[t]
 
 if __name__ == '__main__':
