@@ -18,8 +18,6 @@ def toposort(adj):
     # Step 4: Apply DFS for each unvisited node
     for i in range(len(adj)):
         if not used[i]:
-            print(i)
-            print("HIHIH")
             dfs(i)
     
     #write your code here
