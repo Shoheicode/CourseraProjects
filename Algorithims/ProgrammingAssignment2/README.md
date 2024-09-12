@@ -20,6 +20,9 @@ An integer n
 #### Output: 
 n-th Fibonacci number
 
+![image](https://github.com/user-attachments/assets/bb11c516-7656-448b-8eb4-e91d347c81ec)
+
+
 ---
 
 
