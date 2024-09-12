@@ -4,7 +4,6 @@ import sys
 
 
 def toposort(adj):
-    print(adj)
     used = [False] * len(adj)
     order = []
 
