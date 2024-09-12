@@ -80,20 +80,22 @@ if __name__ == '__main__':
 ```
 
 #### Function fibonacci_number(n)
-The input of this function is n where n is an integer. <br>
+The input of this function is n where n is an integer <br>
 The output of this function is the fibonacci number that is related to that nth integer
 ```python
-lis = []
-
-def fibonacci_number(n):
     if n == 0:
         return 0
     if n == 1:
         return 1
-
+```
+These are the first test cases, where if n = 0 or 1, it will return the respective nth values. These are all the values we need for to get the fibonacci numbers after.
+```python
     lis = [0] * (n+1)
     lis[0] = 0
     lis[1] = 1
+```
+Using the list above, we will be storing the values for the algorithim inside a list. It can solve the problem and the other method is the recursive method but I went with this one. 
+```
 
     for i in range(2, n+1):
         lis[i] = lis[i-1]+lis[i-2]
