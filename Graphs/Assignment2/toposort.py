@@ -2,25 +2,29 @@
 
 import sys
 
-def dfs(adj, used, order, x):
-    used[x] = True
-    for neighbor in adj[x]:
-        if not used[neighbor]:
-            dfs(neighbor)
-    order.append(x)
-
 
 def toposort(adj):
-    used = [0] * len(adj)
+    print(adj)
+    used = [False] * len(adj)
     order = []
 
+    def dfs(x):
+        used[x] = True
+        for neighbor in adj[x]:
+            if not used[neighbor]:
+                dfs(neighbor)
+        order.append(x)
+
     # Step 4: Apply DFS for each unvisited node
-    for i in range(n):
+    for i in range(len(adj)):
         if not used[i]:
-            dfs(adj, used, order, i)
+            print(i)
+            print("HIHIH")
+            dfs(i)
     
     #write your code here
-    return order[::-1]
+    order.reverse()
+    return order
 
 if __name__ == '__main__':
     input = sys.stdin.read()
