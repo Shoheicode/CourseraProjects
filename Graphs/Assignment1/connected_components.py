@@ -4,7 +4,21 @@ import sys
 
 
 def number_of_components(adj):
+    visited = [False] * len(adj)
+    vis = [0] * len(adj)
     result = 0
+    
+    def explore(v):
+        visited[v] = True
+        for i in adj[v]:
+            if not visited[i]:
+                explore(i)
+    
+    for i in range(len(adj)):
+        if not visited[i]:  # Not visited
+            explore(i)
+            result+=1
+
     #write your code here
     return result
 
