@@ -20,7 +20,7 @@ An integer n
 #### Output: 
 n-th Fibonacci number
 
-![image](https://github.com/user-attachments/assets/bb11c516-7656-448b-8eb4-e91d347c81ec)
+![image](https://github.com/user-attachments/assets/1d62e443-a811-493b-b531-f7c519ea47f1)
 
 
 ---
