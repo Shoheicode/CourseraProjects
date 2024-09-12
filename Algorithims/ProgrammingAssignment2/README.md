@@ -35,24 +35,22 @@ Constraints. 2 ≤ n ≤ 2 · 105; 0 ≤ a1 ,...,an ≤ 2 · 105
 Input:
 ```python
 3
-1 2 3
 ```
 
 Output:
 ```python
-6
+2
 ```
 
 #### Sample 2
 Input:
 ```python
 10
-7 5 14 2 8 8 10 1 2 3
 ```
 
 Output:
 ```python
-140
+55
 ```
 
 ## Huge Fibonacci Number
