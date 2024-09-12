@@ -9,7 +9,7 @@ These programs based on efficient algorithms can solve the same problem billions
 - Implement programs that are several orders of magnitude faster than straightforward programs
 
 ## Table of Contents
-- [Fibonacci Sequence](fibonacci-sequence)
+- [Fibonacci Sequence](#fibonacci-sequence)
 - [Finding big Fibonacci nummber]()
 
 ## Fibonacci Sequence
