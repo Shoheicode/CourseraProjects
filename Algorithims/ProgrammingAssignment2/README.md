@@ -16,9 +16,9 @@ These programs based on efficient algorithms can solve the same problem billions
 ### Fibonacci Sequence Problem
 Compute the n-th Fibonacci number.
 #### Input: 
-An integer n and a sequence of n non-negative integers.
+An integer n
 #### Output: 
-The maximum value that can be obtained by multiplying two different elements from the sequence.
+n-th Fibonacci number
 
 ---
 
