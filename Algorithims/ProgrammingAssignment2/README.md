@@ -101,6 +101,12 @@ Using the list above, we will be storing the values for the algorithim inside a 
 
     return lis[n]
 ```
+This then goes through all the possible values n value from 2 to n+1 and at each i value between that range it adds the value before and the second value before. 
+<br>
+For example, if the value was 5, it would iterate like follows:
+
+<br>
+After, it returns the value at the nth spot in the list. 
 
 ## Huge Fibonacci Number
 ### Huge Fibonacci Number Problem
