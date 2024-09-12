@@ -1,3 +1,5 @@
+# Paths in Graphs 1
+
 ## Problem Introduction
 You would like to compute the minimum number of flight segments to get from one city to another one. For
 this, you construct the following undirected graph: vertices represent cities, there is an edge between two
