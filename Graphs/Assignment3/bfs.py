@@ -17,8 +17,7 @@ def distance(adj, s, t):
             if dis[i] == float('inf'):
                 qu.put(i)
                 dis[i] = dis[val]+1
-    
-    #print(dis[t])
+
     #write your code here
     return dis[t]
 
