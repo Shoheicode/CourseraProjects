@@ -4,7 +4,9 @@ import sys
 import queue
 
 def distance(adj, s, t):
+    #first create a list to store the distance from each node
     dis = [0] * len(adj)
+    #make all the distances infinity for now
     for i in range(len(adj)):
         dis[i] = float('inf')
     dis[s] = 0
