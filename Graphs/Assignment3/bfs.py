@@ -28,10 +28,11 @@ def distance(adj, s, t):
                 qu.put(i)
                 dis[i] = dis[val]+1
 
-    #write your code here
+    # If the distance at index t is infinity, that path from the start s to t is non existant.
     if float('inf') == dis[t]:
         return -1
 
+    #otherwise, return the distance at index t
     return dis[t]
 
 if __name__ == '__main__':
