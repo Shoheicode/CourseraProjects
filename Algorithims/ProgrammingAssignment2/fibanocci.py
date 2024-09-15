@@ -1,6 +1,7 @@
 lis = []
 
 def fibonacci_number(n):
+    # Base cases, checks if n = 0 or 1 and returns accordingly
     if n == 0:
         return 0
     if n == 1:
