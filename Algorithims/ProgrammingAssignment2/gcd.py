@@ -1,4 +1,5 @@
 def gcd(a, b):
+    # Base case, when b == 0, it means that a is the lowest gcd
     if b == 0:
         return a
     aPrime = a%b
