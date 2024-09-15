@@ -6,10 +6,14 @@ import queue
 def distance(adj, s, t):
     #first create a list to store the distance from each node
     dis = [0] * len(adj)
-    #make all the distances infinity for now
+    #make all the distances infinity for now so that it will start putting distance later
     for i in range(len(adj)):
         dis[i] = float('inf')
+    
+    # set the starting point to be zero
     dis[s] = 0
+
+    #Create the queue for the bfs function and put in the index s into the queue as the starting point
     qu = queue.Queue()
     qu.put(s)
 
