@@ -28,10 +28,22 @@ def negative_cycle(adj, cost):
     #     for j in range(len(adj[i])):
     #         if dis[i] != float('inf') and dis[i] + w < dis[adj[i][j]]:
     #             return 1
-        
-
-    #write your code here
-    return 0
+    # Step 1: Initialize distances
+    dist = [float('inf')] * n
+    dist[0] = 0  # Start from an arbitrary vertex, here vertex 1 (index 0)
+    
+    # Step 2: Relax all edges n-1 times
+    for _ in range(n - 1):
+        for u, v, w in edges:
+            if dist[u] != float('inf') and dist[u] + w < dist[v]:
+                dist[v] = dist[u] + w
+    
+    # Step 3: Check for negative-weight cycle by trying to relax once more
+    for u, v, w in edges:
+        if dist[u] != float('inf') and dist[u] + w < dist[v]:
+            return 1  # Negative cycle detected
+    
+    return 0  # No negative cycle
 
 if __name__ == '__main__':
     n, m = map(int, input().split())  # n: number of vertices, m: number of edges
