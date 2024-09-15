@@ -1,6 +1,5 @@
 #Uses python3
 
-import math
 import sys
 
 def negative_cycle(adj, cost):
@@ -18,49 +17,30 @@ def negative_cycle(adj, cost):
     # dis[0] = 0
 
     # # print("ADJACENT LIST", adj)
-    # for i in range(len(adj)-1):
+    # for i in range(len(adj)):
     #     # print("I VALUES", i)
     #     for j in range(len(adj[i])):
     #         relax(i, adj[i][j], cost[i][j])
-    
-    # # print(prev)
-    # # print(dis)
 
     # cost = 0
+    
     # for i in range(len(adj)):
-    #     start = i
-    #     next = None
-    #     while start != next:
-    #         if prev[i] == None:
-    #             break
-    #         next = prev[i]
-    #         i = next
-    #     if dis[start] < 0:
-    #         return 1
-    #     cost = 0
+    #     for j in range(len(adj[i])):
+    #         if dis[i] != float('inf') and dis[i] + w < dis[adj[i][j]]:
+    #             return 1
         
 
-    # #write your code here
-    # return 0
-    # Initialize distances from source
-    dist = [float('inf')] * n
-    dist[0] = 0  # You can start from any arbitrary node, here we choose node 0
-    
-    # Perform relaxation for n-1 times
-    for _ in range(n - 1):
-        for u, v, weight in edges:
-            if dist[u] != float('inf') and dist[u] + weight < dist[v]:
-                dist[v] = dist[u] + weight
-    
-    # Check for negative weight cycle
-    for u, v, weight in edges:
-        if dist[u] != float('inf') and dist[u] + weight < dist[v]:
-            return 1  # Negative cycle found
-    
-    return 0  # No negative cycle
-
+    #write your code here
+    return 0
 
 if __name__ == '__main__':
+    n, m = map(int, input().split())  # n: number of vertices, m: number of edges
+    edges = []
+    for _ in range(m):
+        u, v, w = map(int, input().split())  # u: start vertex, v: end vertex, w: weight of edge
+        edges.append((u - 1, v - 1, w))  # Convert to 0-based index
+    
+    print(negative_cycle(n, edges))
     # input = sys.stdin.read()
     # data = list(map(int, input.split()))
     # n, m = data[0:2]
@@ -73,12 +53,3 @@ if __name__ == '__main__':
     #     adj[a - 1].append(b - 1)
     #     cost[a - 1].append(w)
     # print(negative_cycle(adj, cost))
-    n, m = map(int, input().split())  # n: number of vertices, m: number of edges
-    edges = []
-    for _ in range(m):
-        u, v, r_ij = map(int, input().split())  # u, v are vertices, r_ij is the exchange rate
-        edges.append((u - 1, v - 1, -math.log(r_ij)))  # Convert exchange rate to negative log
-    
-    # Run Bellman-Ford algorithm to detect negative cycle
-    print(negative_cycle(n, edges))
-
