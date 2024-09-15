@@ -17,6 +17,7 @@ def distance(adj, s, t):
     qu = queue.Queue()
     qu.put(s)
 
+    
     while not qu.empty():
         val = qu.get()
         for i in adj[val]:
