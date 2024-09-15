@@ -16,5 +16,7 @@ During the completion of this course, I recieved multiple certificates along wit
 
 ## Algorithms on Strings
 
+## Advanced Algorithms and Complexity
+
 ![Coursera](https://img.shields.io/badge/Coursera-0056D2?logo=coursera&logoColor=fff)
 
