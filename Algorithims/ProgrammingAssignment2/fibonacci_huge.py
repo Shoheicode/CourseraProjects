@@ -1,4 +1,4 @@
-def fibonacci_huge_naive(n, m):
+def fibonacci_huge(n, m):
     if n <= 1:
         return n
 
@@ -9,9 +9,10 @@ def fibonacci_huge_naive(n, m):
     for i in range(2, n+1):
         lis[i] = (lis[i-1]+lis[i-2])
 
-    return lis[n] %m
+    #Return the module of the value found with the largest value
+    return lis[n] % m
 
 
 if __name__ == '__main__':
     n, m = map(int, input().split())
-    print(fibonacci_huge_naive(n, m))
+    print(fibonacci_huge(n, m))
