@@ -18,5 +18,7 @@ During the completion of this course, I recieved multiple certificates along wit
 
 ## Advanced Algorithms and Complexity
 
+## Genome Assembly Programming Challenge
+
 ![Coursera](https://img.shields.io/badge/Coursera-0056D2?logo=coursera&logoColor=fff)
 
