@@ -12,14 +12,18 @@ def distance(adj, cost, s, t):
 
     priorityQ = queue.PriorityQueue()
     priorityQ.put((0,s))
+   
 
     while not priorityQ.empty():
-        minV = priorityQ.get()
-        for i in range(len(cost)):
-            if dis[i] > dis[minV] + cost[i]:
+        disT, minIn = priorityQ.get()
+        
+        for i in cost[minIn]:
+            if dis[i] > disT + cost[i]:
                 print("hello")
-                dis[i] = dis[minV] + cost[i]
-                prev[i] = minV
+                dis[i] = disT + cost[i]
+                prev[i] = minIn
+
+                priorityQ.put((dis[i], i))
 
 
     print("Adjacency list")
