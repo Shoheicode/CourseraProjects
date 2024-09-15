@@ -35,8 +35,12 @@ def distance(adj, cost, s, t):
     print("Cost list")
     for a in cost:
         print(a)
+
+    #If the path does not exist, aka inf, the return minus 1
+    if dis[t] == float('inf'):
+        return -1
     #write your code here
-    return -1
+    return dis[t]
 
 
 if __name__ == '__main__':
