@@ -18,6 +18,9 @@ def distance(adj, cost, s, t):
         for i in range(len(cost)):
             if dis[i] > dis[minV] + cost[i]:
                 print("hello")
+                dis[i] = dis[minV] + cost[i]
+                prev[i] = minV
+                
 
     print("Adjacency list")
     for i in adj:
