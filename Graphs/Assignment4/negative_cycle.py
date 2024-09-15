@@ -18,10 +18,11 @@ def negative_cycle(adj, cost):
 
     print("ADJACENT LIST", adj)
     for i in range(len(adj)):
-        print("I VALUES", i)
-        for j in range(adj[i]):
+        print("I VALUES", adj[i])
+        for j in range(len(adj[i])):
             relax(i, adj[i][j], cost[i][j])
 
+    print(dis)
     #write your code here
     return 0
 
