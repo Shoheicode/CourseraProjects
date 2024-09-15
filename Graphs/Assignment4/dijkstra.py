@@ -7,8 +7,10 @@ import queue
 def distance(adj, cost, s, t):
     # set a list called distance to store the distance being infinity 
     dis = [float('inf')] * len(adj)
-    prev = []
+    prev = [None] * len(adj)
 
+    priorityQ = queue.PriorityQueue()
+    
     for i in adj:
         print(i)
     print("HIHIHIHI")
