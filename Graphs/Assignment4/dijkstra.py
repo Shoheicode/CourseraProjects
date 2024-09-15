@@ -5,7 +5,7 @@ import queue
 
 
 def distance(adj, cost, s, t):
-    
+    # set a list called distance to store the distance being infinity 
     dis = [float('inf')] * len(adj)
 
     for i in adj:
