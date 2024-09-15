@@ -11,6 +11,7 @@ def fibonacci_number(n):
     for i in range(2, n+1):
         lis[i] = (lis[i-1]+lis[i-2]) % 10
 
+    #Returning the last value stored at index n
     return lis[n]
 
 
