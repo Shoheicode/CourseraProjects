@@ -7,22 +7,27 @@ def negative_cycle(adj, cost):
     prev = [None] * len(adj)
     
     def relax(u, v, cos):
-        print("u: ", u)
-        print("v: ", v)
-        print("Cost value: ", cos)
+        # print("u: ", u)
+        # print("v: ", v)
+        # print("Cost value: ", cos)
         if dis[v] > dis[u] + cos:
             dis[v] = dis[u] + cos
             prev[v] = u
 
     dis[0] = 0
 
-    print("ADJACENT LIST", adj)
+    # print("ADJACENT LIST", adj)
     for i in range(len(adj)):
-        print("I VALUES", adj[i])
+        # print("I VALUES", i)
         for j in range(len(adj[i])):
             relax(i, adj[i][j], cost[i][j])
 
-    print(dis)
+    for i in range(len(adj)):
+        for j in range(len(adj[i])):
+            v = adj[i][j]
+            if dis[i] != float('inf') and dis[i] + cost[i][j] < dis[v]:
+                return 1
+
     #write your code here
     return 0
 
