@@ -17,9 +17,11 @@ def distance(adj, s, t):
     qu = queue.Queue()
     qu.put(s)
 
-    
+    # while the queue is not empty, loop through the possible nodes
     while not qu.empty():
+        # Get the index of the next value in the queue
         val = qu.get()
+        
         for i in adj[val]:
             if dis[i] == float('inf'):
                 qu.put(i)
