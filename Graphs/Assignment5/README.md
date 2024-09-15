@@ -18,3 +18,18 @@ The cut property is significant in ensuring the optimality of the solutions obta
 By proving the cut property, we can show that the strategies used in Kruskal's Algorithm and Prim's Algorithm are safe. This means that if at any step we have a subset of edges, X, which is a subset of some optimal solution, adding the next edge according to the strategies used in these algorithms will also result in a set of edges that is part of some optimal solution. This justifies that the algorithms will eventually construct a minimum spanning tree.
 
 In other words, the cut property ensures that the edges selected by Kruskal's Algorithm and Prim's Algorithm are always safe choices that contribute to the optimality of the final solution. It guarantees that the algorithms will find the minimum spanning tree by iteratively adding edges that maintain the acyclic property and connect the tree to new vertices.
+
+## Kruskal's Algorithm
+The Kruskal Algorithm is used to find the minimum spanning tree of a graph.
+
+Imagine you have a graph with a bunch of vertices (points) and edges (lines connecting the vertices). The goal is to find a tree that connects all the vertices with the minimum total weight. The Kruskal Algorithm helps us do that.
+
+Here's how it works:
+1. We start with an empty set of edges.
+2. We sort all the edges in the graph by their weight, from smallest to largest.
+3. We go through each edge in order and add it to the set of edges if it doesn't create a cycle.
+4. To check if adding an edge creates a cycle, we use a data structure called disjoint sets.
+5. If adding the edge doesn't create a cycle, we add it to the set of edges and merge the sets that contain the vertices of the edge.
+6. We repeat this process until we have a tree that connects all the vertices.
+
+The Kruskal Algorithm guarantees that the tree we find is the minimum spanning tree, meaning it has the smallest total weight among all possible trees that connect all the vertices. It's a clever and efficient way to solve this problem!
