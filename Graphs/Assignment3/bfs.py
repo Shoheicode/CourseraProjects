@@ -21,8 +21,9 @@ def distance(adj, s, t):
     while not qu.empty():
         # Get the index of the next value in the queue
         val = qu.get()
-        
+        # loop through the adjacency list at the index val
         for i in adj[val]:
+            # if the distance has not been established (infinity), put the index i into the queue. and update the distance at index i to the distance at val plus 1
             if dis[i] == float('inf'):
                 qu.put(i)
                 dis[i] = dis[val]+1
