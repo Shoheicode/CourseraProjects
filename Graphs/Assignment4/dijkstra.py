@@ -17,8 +17,8 @@ def distance(adj, cost, s, t):
     while not priorityQ.empty():
         disT, minIn = priorityQ.get()
 
-        print("Distance:", disT)
-        print("Minimum Index: ", minIn)
+        # print("Distance:", disT)
+        # print("Minimum Index: ", minIn)
         
         for i in range(len(cost[minIn])):
             print(dis[i])
@@ -29,12 +29,12 @@ def distance(adj, cost, s, t):
 
                 priorityQ.put((dis[v], v))
 
-    print("Adjacency list")
-    for i in adj:
-        print(i)
-    print("Cost list")
-    for a in cost:
-        print(a)
+    # print("Adjacency list")
+    # for i in adj:
+    #     print(i)
+    # print("Cost list")
+    # for a in cost:
+    #     print(a)
 
     #If the path does not exist, aka inf, the return minus 1
     if dis[t] == float('inf'):
