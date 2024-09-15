@@ -12,7 +12,6 @@ During the completion of this course, I recieved multiple certificates along wit
 
 ## Data Structures
 
-
 ## Algorithms on Graphs
 
 ![Coursera](https://img.shields.io/badge/Coursera-0056D2?logo=coursera&logoColor=fff)
