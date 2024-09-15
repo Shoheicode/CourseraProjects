@@ -1,6 +1,7 @@
 #Uses python3
 import sys
 import math
+import heapq
 
 def minimum_distance(x, y):
     result = 0.
@@ -14,4 +15,6 @@ if __name__ == '__main__':
     n = data[0]
     x = data[1::2]
     y = data[2::2]
+    print(x)
+    print(y)
     print("{0:.9f}".format(minimum_distance(x, y)))
