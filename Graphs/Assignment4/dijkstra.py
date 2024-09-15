@@ -10,6 +10,9 @@ def distance(adj, cost, s, t):
     prev = [None] * len(adj)
 
     priorityQ = queue.PriorityQueue()
+
+    while not priorityQ.empty():
+        print("hiu")
     
     for i in adj:
         print(i)
