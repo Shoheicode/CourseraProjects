@@ -16,6 +16,8 @@ def distance(adj, cost, s, t):
 
     while not priorityQ.empty():
         disT, minIn = priorityQ.get()
+        print("DISTANCE: ", disT)
+        print("Index Min:", minIn)
         
         for i in cost[minIn]:
             if dis[i] > disT + cost[i]:
