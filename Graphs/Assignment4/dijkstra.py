@@ -18,7 +18,6 @@ def distance(adj, cost, s, t):
         disT, minIn = priorityQ.get()
         
         for i in range(len(cost[minIn])):
-            # print(dis[i])
             v = adj[minIn][i]
             if dis[v] > dis[minIn] + cost[minIn][i]:
                 dis[v] = dis[minIn] + cost[minIn][i]
