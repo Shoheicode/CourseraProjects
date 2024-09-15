@@ -21,16 +21,13 @@ def distance(adj, cost, s, t):
         print("Minimum Index: ", minIn)
         
         for i in range(len(cost[minIn])):
-            print("I VALUE", i)
             print(dis[i])
-            if dis[i] > disT + cost[minIn][i]:
-                print("hello")
-                dis[i] = disT + cost[minIn][i]
-                prev[i] = minIn
+            v = adj[minIn][i]
+            if dis[v] > dis[minIn] + cost[minIn][i]:
+                dis[v] = dis[minIn] + cost[minIn][i]
+                prev[v] = minIn
 
-                priorityQ.put((dis[i], adj[minIn][i]))
-
-    print(dis[t])
+                priorityQ.put((dis[v], v))
 
     print("Adjacency list")
     for i in adj:
