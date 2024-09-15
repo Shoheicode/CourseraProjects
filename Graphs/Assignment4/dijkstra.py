@@ -8,15 +8,19 @@ def distance(adj, cost, s, t):
     # set a list called distance to store the distance being infinity 
     dis = [float('inf')] * len(adj)
     prev = [None] * len(adj)
+    dis[s] = 0
 
     priorityQ = queue.PriorityQueue()
 
+    print(priorityQ)
+
     while not priorityQ.empty():
-        print("hiu")
-    
+        minV = priorityQ.get()
+
+    print("Adjacency list")
     for i in adj:
         print(i)
-    print("HIHIHIHI")
+    print("Cost list")
     for a in cost:
         print(a)
     #write your code here
