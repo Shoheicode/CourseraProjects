@@ -33,3 +33,17 @@ Here's how it works:
 6. We repeat this process until we have a tree that connects all the vertices.
 
 The Kruskal Algorithm guarantees that the tree we find is the minimum spanning tree, meaning it has the smallest total weight among all possible trees that connect all the vertices. It's a clever and efficient way to solve this problem!
+
+## Prim's Algorithm
+We learned about Prim's Algorithm, which is a method for finding the minimum spanning tree of a graph. A minimum spanning tree is a tree that connects all the vertices of a graph with the minimum total weight.
+
+Here's a breakdown of the algorithm:
+1. We start with an empty tree and gradually grow it by adding vertices.
+2. At each iteration, we select the vertex that can be attached to the current tree by the lightest possible edge.
+3. To quickly find the vertex with the smallest weight, we use a priority queue data structure.
+4. We update the priorities of the vertices based on the edges that connect them to the current tree.
+5. We repeat this process until all vertices are included in the tree.
+
+The algorithm ensures that the resulting tree is a minimum spanning tree, meaning it has the smallest total weight among all possible spanning trees of the graph.
+
+To summarize, Prim's Algorithm grows a tree by attaching vertices with the lightest possible edges. It uses a priority queue to efficiently find the next vertex to add. By following this greedy strategy, we can find the minimum spanning tree of a graph.
