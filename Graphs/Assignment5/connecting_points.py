@@ -4,7 +4,9 @@ import math
 import heapq
 
 def minimum_distance(x, y):
+    n = len(x)
     result = 0.
+    
     #write your code here
     return result
 
