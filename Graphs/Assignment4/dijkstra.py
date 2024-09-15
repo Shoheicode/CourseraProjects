@@ -5,6 +5,14 @@ import queue
 
 
 def distance(adj, cost, s, t):
+    
+    dis = [float('inf')] * len(adj)
+
+    for i in adj:
+        print(i)
+    print("HIHIHIHI")
+    for a in cost:
+        print(a)
     #write your code here
     return -1
 
