@@ -2,8 +2,10 @@
 
 import sys
 
-
 def negative_cycle(adj, cost):
+    def relax():
+        
+
     #write your code here
     return 0
 
