@@ -8,19 +8,7 @@ import sys
 
 # S(0,n)=Fn+2 −1
 
-# Thus, the sum of Fibonacci numbers from 
-# 𝐹
-# 𝑚
-# F 
-# m
-# ​
-#   to 
-# 𝐹
-# 𝑛
-# F 
-# n
-# ​
-#   can be derived by subtracting the sum of the first 
+# Thus, the sum of Fibonacci numbers from Fm to Fn can be derived by subtracting the sum of the first 
 # 𝑚
 # −
 # 1
