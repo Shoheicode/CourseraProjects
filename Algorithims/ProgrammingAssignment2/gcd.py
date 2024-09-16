@@ -8,6 +8,14 @@
 # return best
 
 # Euclidean Algorithm
+# The reason is that the greatest common divisor of a and b must be
+# The greatest common divisor of a' and b.
+# Let a' be the remainder when a is divided by b, then:
+# gcd(a,b) = gcd(a', b) = gcd(b, a')
+# Proof:
+# Because a' is a remainder, a = a' + bq for some q
+# 
+
 def gcd(a, b):
     # Base case, when b == 0, it means that a is the lowest gcd
     if b == 0:
