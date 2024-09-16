@@ -2,15 +2,18 @@
 # length of the repeating cycle of Fibonacci numbers modulo m. Here's the approach to efficiently solve this problem:
 
 # Key Concepts:
-# Pisano Period: The Fibonacci sequence modulo m is periodic, and the length of the cycle is called the Pisano period. Knowing the Pisano period allows us to reduce the computation by mapping large Fibonacci indices to smaller ones.
+# Pisano Period: The Fibonacci sequence modulo m is periodic, and the length of the cycle is called the Pisano 
+# period. Knowing the Pisano period allows us to reduce the computation by mapping large Fibonacci indices to smaller ones.
 
-# Modulo Reduction: Instead of directly computing the large Fibonacci number, we first reduce n using the Pisano period. Once we know the Pisano period, we compute n % P, where P is the length of the Pisano period, and calculate the reduced Fibonacci number.
+# Modulo Reduction: Instead of directly computing the large Fibonacci number, we first reduce n using the Pisano period. 
+# Once we know the Pisano period, we compute n % P, where P is the length of the Pisano period, and calculate the 
+# reduced Fibonacci number.
 
 # Steps to Solve:
-# Find the Pisano Period: First, we need to compute the Pisano period for m. This can be done by generating the Fibonacci sequence modulo m until we find a repetition of the pair (0, 1), which indicates the start of a new cycle.
+# Find the Pisano Period: First, we need to compute the Pisano period for m. This can be done by generating the 
+# Fibonacci sequence modulo m until we find a repetition of the pair (0, 1), which indicates the start of a new cycle.
 
 # Reduce n modulo the Pisano period: Once we know the Pisano period P, reduce n by computing n % P.
-
 # Compute the Fibonacci Number: Using the reduced n, compute the Fibonacci number modulo m.
 
 def pisano_period(m):
