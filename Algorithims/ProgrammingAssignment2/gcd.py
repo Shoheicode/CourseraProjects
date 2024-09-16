@@ -8,6 +8,7 @@
 # return best
 
 # Euclidean Algorithm
+
 # The reason is that the greatest common divisor of a and b must be
 # The greatest common divisor of a' and b.
 # Let a' be the remainder when a is divided by b, then:
