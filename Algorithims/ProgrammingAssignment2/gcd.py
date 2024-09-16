@@ -26,7 +26,7 @@ greatest common divisor of a' and b and go through the solution recursively.
 '''
 
 def gcd(a, b):
-    # Base case, when b == 0, it means that a is the lowest gcd
+    # Base case, when b == 0, it means that a is the highest gcd
     if b == 0:
         return a
     aPrime = a%b
