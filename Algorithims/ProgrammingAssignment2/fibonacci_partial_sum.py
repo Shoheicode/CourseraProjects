@@ -25,34 +25,7 @@ import sys
 # n+2 and m+1.
 
 # Fibonacci Modulo: We compute the Fibonacci numbers 
-# 𝐹
-# 𝑛
-# +
-# 2
-# m
-# o
-# d
-#  
-#  
-# 10
-# F 
-# n+2
-# ​
-#  mod10 and 
-# 𝐹
-# 𝑚
-# +
-# 1
-# m
-# o
-# d
-#  
-#  
-# 10
-# F 
-# m+1
-# ​
-#  mod10.
+# F_n+2_ mod 10 and F_m+1_ mod 10.
 
 # Modulo Calculation: Finally, we calculate the difference modulo 10.
 
