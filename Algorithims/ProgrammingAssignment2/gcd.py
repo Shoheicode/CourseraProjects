@@ -12,9 +12,11 @@
 # The greatest common divisor of a' and b.
 # Let a' be the remainder when a is divided by b, then:
 # gcd(a,b) = gcd(a', b) = gcd(b, a')
+
 # Proof:
+# let d be the greatest common divisor
 # Because a' is a remainder, a = a' + bq for some q
-# 
+# d divides into a nad b if and only if it divide a' and b
 
 def gcd(a, b):
     # Base case, when b == 0, it means that a is the lowest gcd
