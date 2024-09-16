@@ -29,8 +29,12 @@ def gcd(a, b):
     # Base case, when b == 0, it means that a is the highest gcd
     if b == 0:
         return a
+    
+    # Gets the remainder of a and b. 
     aPrime = a%b
 
+    # Return the gcd of the value b and the aPrime which based off the proof we made,
+    # this should return the biggest prime every single time
     return gcd(b, aPrime)
 
 
