@@ -20,6 +20,11 @@
 # because if d divides a' and b, it divides a' + bq which is a 
 # so thus it must be a common divisor
 
+'''
+Thus for the algorithim, to find the GCD of a and b, we are going to try and find the
+greatest common divisor of a' and b and go through the solution recursively.
+'''
+
 def gcd(a, b):
     # Base case, when b == 0, it means that a is the lowest gcd
     if b == 0:
