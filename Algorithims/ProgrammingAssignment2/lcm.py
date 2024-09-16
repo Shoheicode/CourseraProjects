@@ -8,8 +8,6 @@ def gcd(a, b):
 def lcm(a, b):
     return (a // gcd(a,b))*b
 
-    assert False
-
 
 if __name__ == '__main__':
     a, b = map(int, input().split())
