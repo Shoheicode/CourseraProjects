@@ -31,7 +31,6 @@ def fibonacci_sum_squares(n):
 
     return result
 
-
 if __name__ == '__main__':
     n = int(input())
     print(fibonacci_sum_squares(n))
