@@ -13,27 +13,7 @@ import sys
 # S(m,n)=S(0,n)−S(0,m−1)=(F_n+2_−1)−(F_m+1_−1)
 # This simplifies to:
 
-# 𝑆
-# (
-# 𝑚
-# ,
-# 𝑛
-# )
-# =
-# 𝐹
-# 𝑛
-# +
-# 2
-# −
-# 𝐹
-# 𝑚
-# +
-# 1
-# S(m,n)=F 
-# n+2
-# ​
-#  −F 
-# m+1
+# S(m,n)=F_n+2_−F_m+1_
 # ​
  
 # We only care about the last digit, so the problem is reduced to calculating:
