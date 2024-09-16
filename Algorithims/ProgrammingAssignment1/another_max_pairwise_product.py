@@ -27,6 +27,7 @@ def max_pairwise_product(numbers):
     numbers[maxIndex] = numbers[n-2]
     numbers[n-2] = max
 
+    # Multiples the first highest and second highest number
     return numbers[n-1]*numbers[n-2]
 
 
