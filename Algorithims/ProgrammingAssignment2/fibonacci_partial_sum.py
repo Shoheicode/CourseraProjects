@@ -18,17 +18,11 @@ import sys
  
 # We only care about the last digit, so the problem is reduced to calculating:
 
-# (F_n+2_−F_m+1_)mod10
+# (F_n+2_−F_m+1_) mod 10
+
 # Steps:
 # Pisano Period: The Fibonacci sequence modulo 10 has a periodic nature (Pisano period), which we will use to reduce the indices 
-# 𝑛
-# +
-# 2
-# n+2 and 
-# 𝑚
-# +
-# 1
-# m+1.
+# n+2 and m+1.
 
 # Fibonacci Modulo: We compute the Fibonacci numbers 
 # 𝐹
