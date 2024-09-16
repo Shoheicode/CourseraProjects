@@ -76,3 +76,8 @@ if __name__ == '__main__':
     input = sys.stdin.read()
     from_, to = map(int, input.split())
     print(fibonacci_partial_sum(from_, to))
+
+# Time Complexity:
+# Pisano Period Calculation: Takes O(m^2), but since m=10, this is a constant time operation.
+# Fibonacci Computation: Takes O(n mod P), where P is the Pisano period length. Since the Pisano 
+# period for modulo 10 is 60, the maximum number of Fibonacci computations we do is 60.
