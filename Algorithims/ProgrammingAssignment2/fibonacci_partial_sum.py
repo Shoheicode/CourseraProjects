@@ -62,6 +62,16 @@ def fibonacci_partial_sum(m, n):
 
     return result
 
+# Code Explanation:
+# Pisano Period: The function pisano_period(m) calculates the Pisano period for modulo 10, which is a periodic sequence when Fibonacci numbers are taken modulo 10.
+
+# Fibonacci Modulo: The function fibonacci_modulo(n, m) calculates the n-th Fibonacci number modulo m. In this case, we only care about modulo 10.
+
+# Partial Sum: The function fibonacci_partial_sum(m, n) computes the partial sum of Fibonacci numbers from 
+# F_m_​ to F_n_, using the formula:
+#   F_n+2_−F_m+1_
+# and returns the last digit.
+
 if __name__ == '__main__':
     input = sys.stdin.read()
     from_, to = map(int, input.split())
