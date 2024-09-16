@@ -10,6 +10,7 @@ These programs based on efficient algorithms can solve the same problem billions
 
 ## Table of Contents
 - [Fibonacci Sequence](#fibonacci-sequence)
+- [Fibonacci Last Digit](#fibonacci-last-digit)
 - [Huge Fibonacci Number](#Huge-Fibonacci-Number)
 
 ## Fibonacci Sequence
