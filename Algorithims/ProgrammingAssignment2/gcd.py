@@ -1,3 +1,5 @@
+#This program can work on large numbers
+
 def gcd(a, b):
     # Base case, when b == 0, it means that a is the lowest gcd
     if b == 0:
