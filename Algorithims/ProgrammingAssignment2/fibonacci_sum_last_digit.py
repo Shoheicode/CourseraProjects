@@ -47,3 +47,7 @@ def fibonacci_sum(n):
 if __name__ == '__main__':
     n = int(input())
     print(fibonacci_sum(n))
+
+# Time Complexity:
+# Since we compute Fibonacci numbers in a linear fashion up to 60 iterations (Aka constant time) (due to the Pisano period), 
+# the time complexity is O(1), making it efficient even for very large n.
