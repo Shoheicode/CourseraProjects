@@ -15,7 +15,6 @@ def fibonacci_partial_sum_naive(from_, to):
 
     return _sum % 10
 
-
 if __name__ == '__main__':
     input = sys.stdin.read()
     from_, to = map(int, input.split())
