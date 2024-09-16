@@ -17,6 +17,8 @@
 # let d be the greatest common divisor
 # Because a' is a remainder, a = a' + bq for some q
 # d divides into a nad b if and only if it divide a' and b
+# because if d divides a' and b, it divides a' + bq which is a 
+# so thus it must be a common divisor
 
 def gcd(a, b):
     # Base case, when b == 0, it means that a is the lowest gcd
