@@ -4,31 +4,10 @@ import sys
 # To compute the last digit of the partial sum of Fibonacci numbers from 
 # Fm to Fn, i.e., S(m,n)=Fm + Fm+1 + ⋯ +Fn
  
-# we can use the fact that the sum of Fibonacci numbers from F0 to 
-# 𝐹
-# 𝑛
-# F 
-# n
-# ​
-#   can be computed using a known identity:
+# we can use the fact that the sum of Fibonacci numbers from F0 to Fn can be computed using a known identity:
 
-# 𝑆
-# (
-# 0
-# ,
-# 𝑛
-# )
-# =
-# 𝐹
-# 𝑛
-# +
-# 2
-# −
-# 1
-# S(0,n)=F 
-# n+2
-# ​
-#  −1
+# S(0,n)=Fn+2 −1
+
 # Thus, the sum of Fibonacci numbers from 
 # 𝐹
 # 𝑚
