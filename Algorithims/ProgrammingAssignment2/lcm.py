@@ -1,3 +1,5 @@
+
+# Needed to help find the Least Common Multiple
 def gcd(a, b):
     if b == 0:
         return a
