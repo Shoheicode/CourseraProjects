@@ -1,3 +1,6 @@
+# Least Common Multiple (LCM):
+# The LCM of two numbers is defined as the smallest integer which is a multiple of both integers. 
+# LCM of an array is the smallest possible integer that is multiple of all the elements of the array.
 
 # Needed to help find the Least Common Multiple
 def gcd(a, b):
