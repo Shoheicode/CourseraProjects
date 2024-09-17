@@ -7,6 +7,7 @@ def gcd(a, b):
 
     return gcd(b, aPrime)
 
+# This is the algorithm used to find the least common multiple
 def lcm(a, b):
     return (a // gcd(a,b))*b
 
