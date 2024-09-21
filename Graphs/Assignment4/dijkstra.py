@@ -12,7 +12,6 @@ def distance(adj, cost, s, t):
 
     priorityQ = queue.PriorityQueue()
     priorityQ.put((0,s))
-   
 
     while not priorityQ.empty():
         disT, minIn = priorityQ.get()
