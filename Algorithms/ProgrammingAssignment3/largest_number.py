@@ -6,12 +6,12 @@ def largest_number(numbers):
 
     numbers.sort(reverse=True)
 
-    largest = 0
+    largest = ""
 
     for i in numbers:
+        largest += str(i)
 
-
-    return largest
+    return int(largest)
 
 
 if __name__ == '__main__':
