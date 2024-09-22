@@ -11,6 +11,7 @@ def optimal_points(segments):
     for s in segments:
         points.append((s.start, s.end))
     
+    #Sort the right most value by least to greatest
     points.sort(key=lambda x: x[1])
 
     while points:
