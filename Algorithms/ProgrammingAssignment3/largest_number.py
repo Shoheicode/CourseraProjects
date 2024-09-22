@@ -1,15 +1,15 @@
 from itertools import permutations
 
 
-def largest_number_naive(numbers):
+def largest_number(numbers):
     numbers = list(map(str, numbers))
 
-    numbers.sort()
+    numbers.sort(reverse=True)
 
     largest = 0
 
-    for permutation in permutations(numbers):
-        largest = max(largest, int("".join(permutation)))
+    for i in numbers:
+
 
     return largest
 
