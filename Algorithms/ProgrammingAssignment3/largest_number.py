@@ -1,20 +1,19 @@
 from itertools import permutations
 
 
-def largest_number(numbers):
+def largest_number_naive(numbers):
+
     numbers = list(map(str, numbers))
 
-    numbers.sort(reverse=True)
+    largest = 0
 
-    largest = ""
+    for permutation in permutations(numbers):
+        largest = max(largest, int("".join(permutation)))
 
-    for i in numbers:
-        largest += str(i)
-
-    return int(largest)
+    return largest
 
 
 if __name__ == '__main__':
     _ = int(input())
     input_numbers = input().split()
-    print(largest_number(input_numbers))
+    print(largest_number_naive(input_numbers))
