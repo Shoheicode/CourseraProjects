@@ -1,4 +1,5 @@
 from itertools import permutations
+from functools import cmp_to_key
 
 def compare(x, y):
     if x+y > y+x:
@@ -9,10 +10,14 @@ def compare(x, y):
 def largest_number_naive(numbers):
     numbers = list(map(str, numbers))
 
-    largest = 0
+    largest = ""
 
-    for permutation in permutations(numbers):
-        largest = max(largest, int("".join(permutation)))
+    sorted_numbers = sorted(numbers, key=cmp_to_key(compare))
+
+    largest = ''.join(sorted_numbers)
+
+    if largest[0] == '0':
+        return 0
 
     return largest
 
