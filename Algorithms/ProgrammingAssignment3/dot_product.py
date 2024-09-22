@@ -7,7 +7,7 @@ def max_dot_product(first_sequence, second_sequence):
 
     max_product = 0
     for p, c in zip(first_sequence, second_sequence):
-        max_product = sum(p * c for p, c in )
+        max_product += p*c
 
     return max_product
 
