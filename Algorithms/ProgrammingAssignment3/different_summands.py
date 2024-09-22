@@ -1,5 +1,8 @@
 def optimal_summands(n):
     summands = []
+    currentS = 0
+
+    
     # write your code here
     return summands
 
