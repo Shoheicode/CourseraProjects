@@ -10,3 +10,6 @@ A Greedy Strategy is basically:
 - Reduce to a smaller problem (aka subproblem)
 - Iterate
 
+Subproblems are defined as:
+A similar problem of smaller size.
+
