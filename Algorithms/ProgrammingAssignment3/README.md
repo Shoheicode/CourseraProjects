@@ -7,7 +7,7 @@ A greedy algorithm is an approach for solving problems by making a series of cho
 
 Characteristics of Greedy Algorithms:
 1. <b>Greedy choice property</b>: At each step, the algorithm chooses the best option available without considering future consequences.
-2. Optimal substructure: A problem exhibits optimal substructure if an optimal solution can be constructed from optimal solutions of its subproblems.
+2. <b>Optimal substructure</b>: A problem exhibits optimal substructure if an optimal solution can be constructed from optimal solutions of its subproblems.
 
 In order to make a Greedy Algorithm, you must have a Greedy Strategy.
 
