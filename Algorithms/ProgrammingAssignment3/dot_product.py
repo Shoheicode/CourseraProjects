@@ -2,6 +2,9 @@ from itertools import permutations
 
 
 def max_dot_product(first_sequence, second_sequence):
+    first_sequence.sort()
+    second_sequence.sort()
+
     max_product = 0
     for permutation in permutations(second_sequence):
         dot_product = sum(first_sequence[i] * permutation[i] for i in range(len(first_sequence)))
