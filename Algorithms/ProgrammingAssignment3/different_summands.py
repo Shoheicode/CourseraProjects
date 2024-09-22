@@ -1,6 +1,6 @@
 def optimal_summands(n):
     summands = []
-    currentS = 0
+    currentS = 1
 
     while n > 0:
         if n-currentS > currentS:
