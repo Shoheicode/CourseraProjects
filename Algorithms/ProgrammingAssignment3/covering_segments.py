@@ -4,6 +4,7 @@ from collections import namedtuple
 Segment = namedtuple('Segment', 'start end')
 
 def optimal_points(segments):
+    segments.sort()
     points = []
     # write your code here
     for s in segments:
