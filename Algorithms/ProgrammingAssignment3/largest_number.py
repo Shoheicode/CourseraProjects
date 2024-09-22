@@ -7,7 +7,7 @@ def compare(x, y):
     else:
         return 1
 
-def largest_number_naive(numbers):
+def largest_number(numbers):
     numbers = list(map(str, numbers))
 
     largest = ""
