@@ -4,7 +4,6 @@ from collections import namedtuple
 Segment = namedtuple('Segment', 'start end')
 
 def optimal_points(segments):
-    print(segments)
     points = []
     compl = []
     # write your code here
