@@ -4,6 +4,8 @@ from itertools import permutations
 def largest_number_naive(numbers):
     numbers = list(map(str, numbers))
 
+    numbers.sort()
+
     largest = 0
 
     for permutation in permutations(numbers):
