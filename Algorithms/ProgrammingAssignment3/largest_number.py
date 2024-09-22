@@ -1,5 +1,10 @@
 from itertools import permutations
 
+def compare(x, y):
+    if x+y > y+x:
+        return -1
+    else:
+        return 1
 
 def largest_number_naive(numbers):
     numbers = list(map(str, numbers))
