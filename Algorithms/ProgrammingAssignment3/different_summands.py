@@ -2,7 +2,16 @@ def optimal_summands(n):
     summands = []
     currentS = 0
 
-    
+    while n > 0:
+        if n-currentS > currentS:
+            summands.append(currentS)
+            n-= currentS
+            currentS+=1
+            
+        else:
+            summands.append(n)
+            break
+
     # write your code here
     return summands
 
