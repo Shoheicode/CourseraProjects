@@ -31,6 +31,7 @@ def min_refills(distance, tank, stops):
     return num_refills
 
 
+# main
 if __name__ == "__main__":
     d, m, _, *stops = map(int, stdin.read().split())
     print(min_refills(d, m, stops))
