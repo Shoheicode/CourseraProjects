@@ -17,6 +17,7 @@ def change(money):
     return change
 
 
+# main portion to run code
 if __name__ == "__main__":
     m = int(input())
     print(change(m))
