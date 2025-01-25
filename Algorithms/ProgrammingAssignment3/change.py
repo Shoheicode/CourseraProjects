@@ -11,6 +11,7 @@ def change(money):
         money = money - 5
         change += 1
 
+    # Calculate the number of 1s
     while money >= 1:
         money = money - 1
         change += 1
