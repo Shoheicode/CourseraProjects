@@ -1,11 +1,12 @@
 def change(money):
     # Calculates Change through greedy algorithm
     change = 0
-    # Calculate the number of 10s, 5s, and 1s
+    # Calculate the number of 10s
     while money >= 10:
         money = money - 10
         change += 1
 
+    # Calculate the number of 5s
     while money >= 5:
         money = money - 5
         change += 1
