@@ -16,6 +16,7 @@ def change(money):
         money = money - 1
         change += 1
 
+    # Returns the change
     return change
 
 
